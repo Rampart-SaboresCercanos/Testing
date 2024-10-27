@@ -6,9 +6,9 @@ Feature: US-04 - Sección de Preguntas Frecuentes Accesible
 
         Examples:
             | Visitante       | enlace |
-            | Valentina Gómez | "¿Tienes preguntas? Visita nuestra _Sección de Preguntas Frecuentes_ para más información." |
-            | Marco Ruiz      | "Encuentra respuestas rápidas en nuestra _FAQ_ y resuelve tus dudas al instante." |
-            | Sofía Herrera   | "Explora nuestra _Página de Preguntas Frecuentes_ para obtener más detalles sobre cómo funciona 'Sabores Cercanos'." |
+            | Valentina Gómez | "¿Tienes preguntas? Visita nuestra -Sección de Preguntas Frecuentes- para más información." |
+            | Marco Ruiz      | "Encuentra respuestas rápidas en nuestra -FAQ- y resuelve tus dudas al instante." |
+            | Sofía Herrera   | "Explora nuestra -Página de Preguntas Frecuentes- para obtener más detalles sobre cómo funciona 'Sabores Cercanos'." |
 
     Scenario: Resolución de Dudas
         Given que un [visitante] está leyendo la sección de preguntas frecuentes
