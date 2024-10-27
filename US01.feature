@@ -1,7 +1,7 @@
 Feature: US-01 - Inicio de "Sabores Cercanos"
     Scenario: Mensaje Informativo en la Landing Page
         Given que un [visitante] llega a la landing page
-        When visualice la sección introductoria de "Sabores Cercanos"
+        When visualice la sección introductoria de Sabores Cercanos
         Then debe encontrar un [mensaje] claro y conciso que explique qué es la plataforma y cómo puede beneficiarlo
 
         Examples:
@@ -11,7 +11,7 @@ Feature: US-01 - Inicio de "Sabores Cercanos"
             | Sofía Herrera   | Con recomendaciones adaptadas a tus gustos y preferencias, "Sabores Cercanos" mejora tu experiencia culinaria al brindarte opciones que se ajustan a tu estilo de vida y necesidades dietéticas.|
 
     Scenario: Ejemplos de Beneficios Destacados
-        Given que un [visitante] está leyendo sobre "Sabores Cercanos"
+        Given que un [visitante] está leyendo sobre Sabores Cercanos
         When vea la lista de beneficios
         Then debe encontrar [ejemplos] específicos de cómo la plataforma mejora la experiencia culinaria y facilita el acceso a platos locales
 
