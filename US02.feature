@@ -1,7 +1,7 @@
 Feature: US-02 - Proceso de Registro Eficiente
     Scenario: Registro Rápido en la Landing Page
         Given que un [visitante] decide registrarse
-        When haga clic en el [botón de registro]
+        When haga clic en el botón de registro
         Then debe ser redirigido a un [formulario] simple y fácil de completar que no requiera más de tres pasos
 
         Examples:
