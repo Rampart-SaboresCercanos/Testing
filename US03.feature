@@ -5,10 +5,10 @@ Feature: US-03 - Visualización de Platos Populares y Reseñas
         Then debe encontrar una galería con [imágenes] y [descripciones] de los platos más solicitados
 
         Examples:
-            | Visitante       | images | descripciones |
-            | Valentina Gómez | tacos_de_pollo.png | "Deliciosos tacos de pollo desmenuzado, servidos con cebolla, cilantro y salsa fresca." |
-            | Marco Ruiz      | pasta_alfredo.png | "Pasta Alfredo cremosa, acompañada de pechuga de pollo a la parrilla y espárragos." |
-            | Sofía Herrera   | ensalada_cesar.png | "Ensalada César clásica con lechuga fresca, crutones dorados y aderezo cremoso." |
+            | Visitante       | images              | descripciones |
+            | Valentina Gómez | tacos_de_pollo.png  | "Deliciosos tacos de pollo desmenuzado, servidos con cebolla, cilantro y salsa fresca." |
+            | Marco Ruiz      | pasta_alfredo.png   | "Pasta Alfredo cremosa, acompañada de pechuga de pollo a la parrilla y espárragos." |
+            | Sofía Herrera   | ensalada_cesar.png  | "Ensalada César clásica con lechuga fresca, crutones dorados y aderezo cremoso." |
 
     Scenario: Reseñas de Usuarios
         Given que un [visitante] está interesado en la calidad de la comida
