@@ -6,9 +6,9 @@ Feature: US-05 - Política de Privacidad Clara
 
         Examples:
             | Visitante       | enlace |
-            | Valentina Gómez | "Tu privacidad es importante para nosotros. Consulta nuestra _Política de Privacidad_ para más información." |
-            | Marco Ruiz      | "¿Preocupado por tus datos? Revisa nuestra _Política de Privacidad_ para conocer cómo te protegemos." |
-            | Sofía Herrera   | "Infórmate sobre cómo manejamos tu información en nuestra _Política de Privacidad_." |
+            | Valentina Gómez | "Tu privacidad es importante para nosotros. Consulta nuestra -Política de Privacidad- para más información." |
+            | Marco Ruiz      | "¿Preocupado por tus datos? Revisa nuestra -Política de Privacidad- para conocer cómo te protegemos." |
+            | Sofía Herrera   | "Infórmate sobre cómo manejamos tu información en nuestra -Política de Privacidad-." |
 
     Scenario: Comprensión de la Política de Privacidad
         Given que un [visitante] lee la política de privacidad
