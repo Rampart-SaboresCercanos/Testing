@@ -1,22 +1,22 @@
-Feature: US04 - Visualización de la información nutricional          
-    Scenario: Mostrar información nutricional detallada. 
-        Given que un usuario ha seleccionado un [plato del menú],  
-        When el usuario accede a la página de detalles del plato,  
-        Then el sistema mostrará la información nutricional completa del plato, que incluye [calorías], [proteínas], [grasas] y [carbohidratos].
+Feature: US-04 - Sección de Preguntas Frecuentes Accesible
+    Scenario: Acceso a la Sección de Preguntas Frecuentes
+        Given que un [visitante] tiene dudas antes de registrarse
+        When busque información en la landing page
+        Then debe encontrar un [enlace] claro y visible a la sección de preguntas frecuentes
 
         Examples:
-            | [plato del menú]    | [calorías] | [proteínas] | [grasas] | [carbohidratos] |
-            | Pizza de queso      | 800        | 25g         | 35g      | 80g             |
-            | Ensalada de pollo   | 400        | 30g         | 15g      | 40g             |
-            | Sándwich vegano     | 300        | 10g         | 12g      | 45g             |
+            | Visitante       | enlace |
+            | Valentina Gómez | "¿Tienes preguntas? Visita nuestra _Sección de Preguntas Frecuentes_ para más información." |
+            | Marco Ruiz      | "Encuentra respuestas rápidas en nuestra _FAQ_ y resuelve tus dudas al instante." |
+            | Sofía Herrera   | "Explora nuestra _Página de Preguntas Frecuentes_ para obtener más detalles sobre cómo funciona 'Sabores Cercanos'." |
 
-    Scenario: Advertencia por exceso de calorías o nutrientes. 
-        Given que el usuario está revisando la información nutricional de un [plato del menú], 
-        When el valor de [calorías] o de ciertos nutrientes excede las recomendaciones diarias,  
-        Then el sistema mostrará una [advertencia] sugiriendo, mediante una [acción sugerida] revisar la selección o elegir platos más saludables.
+    Scenario: Resolución de Dudas
+        Given que un [visitante] está leyendo la sección de preguntas frecuentes
+        When encuentre una pregunta relevante a su situación
+        Then debe leer una [respuesta] clara y concisa que resuelva su duda
 
         Examples:
-            | [plato del menú]    | [calorías] | [advertencia]           | [acción sugerida]             |
-            | Hamburguesa doble   | 1200       | Exceso de calorías      | Sugerir platos más saludables |
-            | Pasta carbonara     | 900        | Exceso de grasas        | Revisar selección             |
-            | Batido de chocolate | 600        | Exceso de azúcar        | Sugerir opciones más ligeras  |
+            | Visitante       | respuesta |
+            | Valentina Gómez | "Puedes registrarte haciendo clic en el botón de registro en la parte superior de la página." |
+            | Marco Ruiz      | "Sí, puedes modificar tu pedido dentro de un plazo de 10 minutos después de la confirmación." |
+            | Sofía Herrera   | "Aceptamos tarjetas de crédito, débito y pagos a través de plataformas como PayPal." |

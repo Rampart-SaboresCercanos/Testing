@@ -1,24 +1,22 @@
-Feature: US03 - Visualización de Reseñas
-Scenario: Ver reseñas antes de hacer un pedido
-    Given que el usuario quiere asegurarse de que el cocinero ofrece comida de calidad
-    When el usuario revisa las reseñas y calificaciones de otros clientes
-    Then el aplicativo muestra de forma clara y detallada las opiniones y calificaciones
-    And el usuario puede tomar una decisión informada.
+Feature: US-03 - Visualización de Platos Populares y Reseñas
+    Scenario: Sección de Platos Destacados
+        Given que un [visitante] está en la landing page
+        When busque ejemplos de platos populares
+        Then debe encontrar una galería con [imágenes] y [descripciones] de los platos más solicitados
 
-    Examples:
-      | cocinero       | calificación_promedio |
-      | Chef Juan      | 4.8                   |
-      | Chef Mariana   | 4.5                   |
-      | Chef Roberto   | 4.9                   |
+        Examples:
+            | Visitante       | images | descripciones |
+            | Valentina Gómez | tacos_de_pollo.png | "Deliciosos tacos de pollo desmenuzado, servidos con cebolla, cilantro y salsa fresca." |
+            | Marco Ruiz      | pasta_alfredo.png | "Pasta Alfredo cremosa, acompañada de pechuga de pollo a la parrilla y espárragos." |
+            | Sofía Herrera   | ensalada_cesar.png | "Ensalada César clásica con lechuga fresca, crutones dorados y aderezo cremoso." |
 
-  Scenario: Comparar cocineros antes de elegir
-    Given que el usuario tiene varias opciones de cocineros y quiere elegir la mejor
-    When el usuario compara las reseñas y perfiles de varios cocineros
-    Then el aplicativo facilita la comparación lado a lado
-    And ayuda al usuario a seleccionar el cocinero que mejor se ajusta a sus expectativas.
+    Scenario: Reseñas de Usuarios
+        Given que un [visitante] está interesado en la calidad de la comida
+        When revise la sección de reseñas
+        Then debe poder leer [opiniones] de otros usuarios que destacan la calidad y el sabor de los platos ofrecidos
 
-    Examples:
-      | cocinero_1     | cocinero_2     | calificación_1 | calificación_2 |
-      | Chef Juan      | Chef Mariana   | 4.8            | 4.5            |
-      | Chef Roberto   | Chef Juan      | 4.9            | 4.8            |
-      | Chef Mariana   | Chef Roberto   | 4.5            | 4.9            |
+        Examples:
+            | Visitante       | opinions |
+            | Valentina Gómez | "Los tacos de pollo son simplemente exquisitos, con un sabor auténtico que los hace irresistibles." |
+            | Marco Ruiz      | "La pasta Alfredo es cremosa y deliciosa; cada bocado es una explosión de sabor." |
+            | Sofía Herrera   | "La ensalada César es fresca y bien balanceada; los crutones le dan un toque crujiente perfecto." |
